@@ -63,3 +63,20 @@ function MultiplicativePersistance(num){
   }
   return MultiplicativePersistance(parseFloat(mult));
 }
+
+// In this simple assignment you are given a number and have to make it negative.
+// But maybe the number is already negative?
+
+function makeNegative(num) {
+
+  if (num > 0) {
+    var negNum;
+    negNum = num * -1;
+    return negNum;
+  }
+  if (num < 0) {
+    return num;
+  }
+  else {
+    return 0;
+  }
