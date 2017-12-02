@@ -80,3 +80,16 @@ function makeNegative(num) {
   else {
     return 0;
   }
+
+  // cloning the first level of an object and copying only its properties.
+
+var foo = {
+  foo: 1,
+  bar: 2,
+  baz: 3
+};
+
+var bar = {};
+Object.keys(foo).forEach(function(prop){
+  bar[prop] = null;
+});
